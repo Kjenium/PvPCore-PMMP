@@ -26,7 +26,7 @@ class PvPCommand extends BaseCommand
     {
         parent::__construct("pvp", "The base command of PvPCore.", "/pvp help");
 
-        $param = new SimpleParameter(Parameter::NO_PERMISSION, "knockback|attackdelay", Parameter::PARAMTYPE_STRING);
+        $param = new SimpleParameter(Parameter::NO_PERMISSION, "knockback|attackdelay|kb|delay", Parameter::PARAMTYPE_STRING);
         $param = $param->setExactValues(true);
 
         $params = array(
